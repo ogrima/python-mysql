@@ -26,3 +26,12 @@ CREATE DATABASE e_commerce;
 ### Running
 
 > python ./src/index.py
+
+### Testing
+
+curl --location --request POST 'http://localhost:8080/' --header 'Content-Type: application/json' --data-raw '{ "first_name": "Alexander", "last_name": "Ocon" }'
+curl --location --request POST 'http://localhost:8080/' --header 'Content-Type: application/json' --data-raw '{ "first_name": "Carlos", "last_name": "Sainz" }'
+curl --location --request POST 'http://localhost:8080/' --header 'Content-Type: application/json' --data-raw '{ "first_name": "Charles", "last_name": "leclerc" }'
+curl --location --request POST 'http://localhost:8080/' --header 'Content-Type: application/json' --data-raw '{ "first_name": "Sebastian", "last_name": "Vetel" }'
+
+
