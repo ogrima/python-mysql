@@ -9,3 +9,14 @@ FLUSH PRIVILEGES;
 use e_commerce;
 
 show tables;
+
+
+CREATE TABLE customers (
+           customer_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+           first_name  VARCHAR(50),
+           last_name  VARCHAR(50)    
+       ) ENGINE = InnoDB;
+       
+       
+       
+select * from customers;
